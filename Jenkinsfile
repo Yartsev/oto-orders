@@ -20,7 +20,7 @@ node ('slave1'){
    }
    def image = ''
    stage ('dockerize'){
-       image = docker.build "yartsev/oto-${svcName}:${env.BUILD_NUMBER}"
+       image = docker.build "320710/oto-${svcName}:${env.BUILD_NUMBER}"
    }
     
     stage ('push'){
